@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hostel Menu Predictor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="top">
+    <h1>Hostel Menu<span> Predictor</span></h1>
+    <p>View your estimated meals for the week.</p>
+    <h3 id="cycleTitle">Current cycle:</h3>
+
+    <div class="day-buttons">
+      <button data-day="1">Mon</button>
+      <button data-day="2">Tue</button>
+      <button data-day="3">Wed</button>
+      <button data-day="4">Thu</button>
+      <button data-day="5">Fri</button>
+      <button data-day="6">Sat</button>
+      <button data-day="0">Sun</button>
+    </div>
+  </header>
+
+  <main id="menuContainer" class="menu-container"></main>
+
+  <footer>
+    <p>Note: Meals may change depending on ingredient availability.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

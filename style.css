@@ -1,0 +1,216 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #111;
+  font-size: smaller;
+}
+
+.top {
+  text-align: center;
+  padding: 28px 16px 42px;
+}
+
+.top h1 {
+  font-size: 34px;
+  margin: 0 0 28px;
+  font-weight: 800;
+}
+
+.top h1 span {
+  color: #ff9800;
+}
+
+.top p {
+  font-size: 17px;
+  margin: 0 0 16px;
+}
+
+.top h3 {
+  font-size: 18px;
+  margin: 0 0 22px;
+  font-weight: 800;
+}
+
+.day-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.day-buttons button {
+  flex: 0 0 auto;
+  background: #151515;
+  color: white;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.day-buttons button.active {
+  background: #ff9800;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 26px;
+  padding: 0 22px 34px;
+  align-items: stretch;
+}
+
+.day-card {
+  background: #111;
+  color: white;
+  border: 2px solid #ff9800;
+  border-radius: 14px;
+  padding: 26px 21px 34px;
+  min-height: 880px;
+}
+
+.card-top-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.card-top-icon svg {
+  width: 34px;
+  height: 34px;
+  stroke: #000;
+  stroke-width: 2.5;
+  fill: none;
+}
+
+.day-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 25px;
+  margin: 0 0 14px;
+  font-weight: 800;
+}
+
+.day-title svg {
+  width: 23px;
+  height: 23px;
+  stroke: #ff9800;
+  stroke-width: 2.7;
+  fill: none;
+}
+
+.label {
+  color: #ffb300;
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 26px;
+}
+
+.date {
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.meal-title {
+  font-size: 21px;
+  font-weight: 800;
+  margin: 24px 0 14px;
+}
+
+.meal-box {
+  background: #1a1a1a;
+  border: 1.5px solid #ff9800;
+  border-radius: 13px;
+  padding: 17px 16px;
+  min-height: 180px;
+}
+
+.meal-box p {
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 800;
+  margin: 0 0 9px;
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  color: #444;
+  font-size: 14px;
+}
+
+/* phone */
+@media (max-width: 600px) {
+  .top {
+    padding: 22px 10px 28px;
+  }
+
+  .top h1 {
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+
+  .top p {
+    font-size: 14px;
+  }
+
+  .top h3 {
+    font-size: 15px;
+  }
+
+  .day-buttons {
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 0 4px 8px;
+  }
+
+  .day-buttons button {
+    padding: 11px 13px;
+    font-size: 13px;
+  }
+
+  .menu-container {
+    grid-template-columns: 1fr;
+    padding: 0 14px 26px;
+    gap: 18px;
+  }
+
+  .day-card {
+    min-height: auto;
+    padding: 22px 18px 28px;
+  }
+
+  .card-top-icon {
+    margin-bottom: 20px;
+  }
+
+  .day-title {
+    font-size: 23px;
+  }
+
+  .meal-title {
+    font-size: 19px;
+  }
+
+  .meal-box {
+    min-height: auto;
+    padding: 16px;
+  }
+
+  .meal-box p {
+    font-size: 15px;
+  }
+}
